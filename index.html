@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="dist/css/main.css">
+    <title>Dribble Weather App</title>
+</head>
+<body>
+    <main class="main">
+       
+        <header class="header">
+            <nav class="navbar">
+                <h3 class="nav-h3">Ryan</h3>
+                <div class="nav-div">
+                    <input class="nav_input" type="text" placeholder="Enter city name..." ;">
+                    <i class="fas fa-search fa-xs nav_i" style="color: rgb(214, 216, 216);"></i>
+                </div>
+            </nav>
+            <section class="section-header">
+                <article class="article1_section-header">
+                    <img class="icon_article1_section-header" src="dist/img/sun1.png" alt="">
+                    <p class="article1-p1">13°</p>
+                    <p class="article1-p2">Telluride, CO, USA</p>
+                 </article>
+            <article class="article2_section-header">
+                <p class="article2-p">7:50pm</p>
+                <p>Sunset Time,Monday</p>
+            </article>
+        </section>
+    </header>
+    <section class="section-main">             
+       <article class="article_main_section_main">
+        <article class="article_section_main">
+            <div class="container1">
+                
+                <div class="flex-container1_article_section_main">
+                    <div class="container1_article_section_main">
+                        <img class="icon_container1" src="dist/img/humidity.png" alt="Humidity">
+                        <div>
+                            <p class="font1_container1">Humidity</p>
+                            <p class="font2_container1">39%</p>
+                        </div>
+                    </div>
+        
+                    <div class="container1_article_section_main">
+                        <img class="icon_container1" src="dist/img/sun.png" alt="uv index">
+                        <div>
+                            <p class="font1_container1">UV Index</p>
+                            <p class="font2_container1">0 of 10</p>
+                        </div>
+                    </div>
+        
+                </div>
+    
+                <hr class="hr_container1">
+                <div class="flex-container1_article_section_main"> 
+                 <div class="container1_article_section_main">
+                     <img class="icon_container1" src="dist/img/sunset.png" alt="Sunset">
+                     <div>
+                         <p class="font1_container1">Sunset</p>
+                         <p class="font2_container1">7:50 pm</p>
+                     </div>
+                 </div>
+     
+                 <div class="container1_article_section_main">
+                     <img class="icon_container1" src="dist/img/sunrise.png" alt="sunrise">
+                     <div>
+                         <p class="font1_container1">Sunrise</p>
+                         <p class="font2_container1">6:35pm</p>
+                     </div>
+                 </div>
+                </div>
+     
+            </div>
+        <div class="container2">
+            <div>
+                <p class="font1_container2">Monthly Rainfall</p>
+                <p class="font2_container2">45mm</p>
+            </div>
+            <div>
+                <p class="font3_container2">This Year</p>
+                <p class="font4_container2">+17%</p>
+            </div>
+        </div>
+        
+    </article>
+    
+    <div class="container3_chart">
+        <p class="font1_container3_chart">Temperature . precipitation . Wind</p>
+        <div class="canvas_container3_chart">
+            <canvas  id="myChart"></canvas>
+        </div>
+        <div class="flex_container3_chart">
+            <div class="part1_flex_container3_chart">
+                <p class="p1_container3_chart">MON</p>
+                <img class="img_container3_chart" src="dist/img/sun.png" alt="">
+                <p class="p2_container3_chart">13°</p>
+            </div>
+            <hr class="hr_container3_chart">
+            <div class="part1_flex_container3_chart">
+                <p class="p1_container3_chart">TUE</p>
+                <img class="img_container3_chart" src="dist/img/wind.png" alt="">
+                <p class="p2_container3_chart">12°</p>
+            </div>
+            <hr class="hr_container3_chart">
+            <div class="part1_flex_container3_chart">
+                <p class="p1_container3_chart">WED</p>
+                <img class="img_container3_chart" src="dist/img/cloud.png" alt="">
+                <p class="p2_container3_chart">12°</p>
+            </div>
+            <hr class="hr_container3_chart">
+            <div class="part1_flex_container3_chart">
+                <p class="p1_container3_chart">THU</p>
+                <img class="img_container3_chart"  src="dist/img/cloud (1).png" alt="">
+                <p class="p2_container3_chart">9°</p>
+            </div>
+            <hr class="hr_container3_chart">
+            <div class="part1_flex_container3_chart">
+                <p class="p1_container3_chart">FRI</p>
+                <img class="img_container3_chart" src="dist/img/rainy-day.png" alt="">
+                <p class="p2_container3_chart">7°</p>
+            </div>
+            <hr class="hr_container3_chart">
+            <div class="part1_flex_container3_chart">
+                <p class="p1_container3_chart">SAT</p>
+                <img class="img_container3_chart" src="dist/img/cloud.png" alt="">
+                <p class="p2_container3_chart">10°</p>
+            </div>
+            <hr class="hr_container3_chart">
+            <div class="part1_flex_container3_chart">
+                <p class="p1_container3_chart">SUN</p>
+                <img class="img_container3_chart"  src="dist/img/sun.png" alt="">
+                <p class="p2_container3_chart">11°</p>
+            </div>
+        </div>
+    </div>
+       </article>
+       </section>
+    </main>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.6.2/chart.min.js"></script>
+    <script src="dist/app-js/index.js"></script>
+</body>
+</html>
