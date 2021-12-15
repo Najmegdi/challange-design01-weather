@@ -1,6 +1,7 @@
 * {
     padding: 0;
     margin: 0;
+    outline: 0;
     box-sizing: border-box;
 }
 
@@ -41,15 +42,15 @@ body{
         justify-content: space-between;
         align-items: center;
         background: #ffffff;
-        width: 55%;
+        width: 45%;
         margin-right: 2rem;
-        // padding: .6rem .4rem;
         border: 1.5px solid #ccc;
         border-radius: 5px;
         .nav_input{
             border: none;
             padding: .7rem 0;
-            padding-right: 1.7rem;
+            padding-right: 2.1rem;
+            margin:0 .2rem;
         }
         .nav_i {
             margin: 0 .5rem;
