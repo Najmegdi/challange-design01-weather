@@ -14,7 +14,6 @@ body{
 .main{
     background: rgb(238, 248, 250);
     width: 90%;
-    // height: 80vh;
     margin: 4rem;
     border: 3px solid #4279e0;
     border-radius: 30px;
@@ -26,25 +25,40 @@ body{
 .navbar{
     display: flex;
     justify-content: space-between;
+    align-items: center;
     margin: 2rem 0;
+    .nav-right-section{
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        width: 40vw;
+    }
     .nav-h3{
         color: #4279e0;
     }
     .nav-div{
         display: flex;
         justify-content: space-between;
+        align-items: center;
         background: #ffffff;
-        width: 27%;
-        padding: .6rem .4rem;
+        width: 55%;
+        margin-right: 2rem;
+        // padding: .6rem .4rem;
         border: 1.5px solid #ccc;
         border-radius: 5px;
         .nav_input{
             border: none;
-            width: 90%;
+            padding: .7rem 0;
+            padding-right: 1.7rem;
         }
-        .nav_i:hover{
+        .nav_i {
+            margin: 0 .5rem;
             cursor: pointer;
         }
+    }
+    .nav_img{
+        height: 6vh;
+        cursor: pointer;
     }
 }
 ::placeholder {
@@ -111,7 +125,6 @@ body{
             justify-content: space-between;
             height: 60vh;
             width: 40%;
-            // border: 3px solid rgb(224, 98, 25);
             .container1{
                 display: flex;
                 width: 85%;

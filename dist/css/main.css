@@ -22,22 +22,34 @@ body {
 .navbar {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   margin: 2rem 0; }
+  .navbar .nav-right-section {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 40vw; }
   .navbar .nav-h3 {
     color: #4279e0; }
   .navbar .nav-div {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     background: #ffffff;
-    width: 27%;
-    padding: .6rem .4rem;
+    width: 55%;
+    margin-right: 2rem;
     border: 1.5px solid #ccc;
     border-radius: 5px; }
     .navbar .nav-div .nav_input {
       border: none;
-      width: 90%; }
-    .navbar .nav-div .nav_i:hover {
+      padding: .7rem 0;
+      padding-right: 1.7rem; }
+    .navbar .nav-div .nav_i {
+      margin: 0 .5rem;
       cursor: pointer; }
+  .navbar .nav_img {
+    height: 6vh;
+    cursor: pointer; }
 
 ::placeholder {
   color: #ccc;
